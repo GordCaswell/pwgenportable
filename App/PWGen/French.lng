@@ -2,10 +2,10 @@
 French
 
 [LANGUAGEVERSION]
-2.6.0
+2.9.0
 
 [LANGUAGEAUTHOR]
-Jean-Claude Etiemble - Sylvie Pierrard -\nSébastien Menei
+Sébastien Menei\nJean-Claude Etiemble - Sylvie Pierrard
 
 [LANGUAGEHELPFILE]
 manual.pdf
@@ -49,6 +49,9 @@ Fichier de liste des mots :
 Browse
 Parcourir
 
+Specify length*:
+Spécifier la longueur*:
+
 Combine Words with Characters
 Combiner des mots avec des caractères
 
@@ -76,8 +79,11 @@ Cliquer sur "Générer"
 Hide/show password
 Afficher/Cacher le mot de passe
 
+Hold left mouse button to drag & drop password
+Maintenez le bouton gauche de la souris pour glisser-déposer le mot de passe
+
 Random Pool
-Génération aléatoire
+Réserve aléatoire
 
 Entropy Bits:
 Bits d'entropie
@@ -124,8 +130,14 @@ Réinitialiser
 Deactivate
 Désactiver
 
-Provide Additional Entropy...
-Fournir de l'entropie additionnelle...
+Provide Additional Entropy
+Fournir de l'entropie supplémentaire
+
+As Text...
+En entrant du texte...
+
+From File...
+A partir d'un fichier...
 
 Options
 Options
@@ -135,6 +147,9 @@ Configuration...
 
 Language
 Langue
+
+Always on Top
+Toujours au premier plan
 
 Save Settings on Exit
 Sauvegarder la configuration en quittant
@@ -182,7 +197,7 @@ Clear clipboard (text contents only)
 Effacer le presse-papiers (Contenu texte uniquement)
 
 Clipboard text encryption (left-click) or decryption (right-click)
-Chiffrer le presse-papiers (clic gauche) or Déchiffrer (clic droit)
+Chiffrer le presse-papiers (clic gauche) ou Déchiffrer (clic droit)
 
 Load, create or delete profiles
 Charger, créer ou supprimer des profils
@@ -232,6 +247,9 @@ Tester le mot de passe
 Change Font...
 Modifier la police ...
 
+Select high-entropy file
+Choisissez un fichier à haute entropie
+
 Could not read random seed file\n\"%s\".
 Impossible de lire le fichier racine aléatoire\n\"%s\".
 
@@ -240,6 +258,9 @@ Impossible d'écrire dans le fichier racine aléatoire\n\"%s\".
 
 Unknown command line switch(es):\n%s
 Commutateur de ligne de commande inconnu : \n%s
+
+Error while loading word list file\n\"%s\".
+Erreur pendant le chargement du fichier de liste de mots\n\"%s\".
 
 PWGen encountered %d error(s) during startup:
 Pwgen a rencontré %d erreur(s) lors du démarrage :
@@ -251,7 +272,7 @@ Error while writing to configuration file:\n%s.
 Erreur lors de l'écriture du fichier de configuration :\n%s.
 
 %d characters / %.1f bits per character
-%d caractères / %.1f bits par caractères
+%d caractères / %.1f bits par caractère
 
 %d words / %.1f bits per word
 %d mots / %.1f bits par mot
@@ -298,17 +319,26 @@ Impossible d'enregistrer le raccourci-clavier %s.\nSVP essayer une autre combina
 The selected file already exists. Do you\nwant to append passwords to this file\n(existing passwords will be preserved),\nor do you want to completely overwrite it?\n\nYes\t-> append passwords,\nNo\t-> overwrite file,\nCancel\t-> cancel process.
 Le fichier sélectionné existe déjà. Voulez-vous\najouter les mots de passe à ce fichier\n(les mots de passe existants seront préservés),\nou voulez-vous complètement l'écraser ?\n\nOui\t->ajoute les mots de passe,\nNon\t->écrase le fichier, \nAnnuler\t->annuler l'action.
 
-When the option \"Each character must occur\nonly once\" is activated, the password length\nis limited to the size of the character set (%d).
-Quand l'option \"Chaque caractère ne doit apparaitre\nqu'une seule fois\" est activée, la taille du mot de passe est limitée à la taille du jeu de caractères (%d).
+Passphrase: Invalid length range.
+Phrase de passe : Intervalle de longueur invalide.
 
-When the option \"Each word must occur only\nonce\" is activated, the number of words\nis limited to the size of the word list (%d).
-Quand l'option \"Chaque mot ne doit apparaitre\nqu'une seule fois\" est activée, le nombre de mots\nest limité à la taille de la liste de mots (%d).
+If the option \"Each character must occur\nonly once\" is activated, the password length\nis limited to the size of the character set (%d).
+Si l'option \"Chaque caractère ne doit apparaitre\nqu'une seule fois\" est activée, la taille du mot de passe\n est limitée à la taille du jeu de caractères (%d).
 
-Creating password list ...
-Création d'une liste de mots de passe
+If the option \"Each word must occur only\nonce\" is activated, the number of words\nis limited to the size of the word list (%d).
+Si l'option \"Chaque mot ne doit apparaitre qu'une seule fois\" est activée,\nle nombre de mots est limité à la taille de la liste de mots (%d)
+
+Generating password list ...
+Génération de la liste de mots de passe...
 
 %d of %d passwords generated.
 %d de %d mots de passe générés.
+
+Generating passphrase ...
+Génération de la phrase de passe...
+
+%d of %d passphrases generated.
+%d de %d phrases de passe générées.
 
 Format string produces empty password
 La chaîne de format produit des mots de passe vide.
@@ -427,20 +457,20 @@ Timer de haute précision utilisé :\n%s\n\Valeur actuelle : %s.
 Could not download version file
 Ne peut pas télécharger la version du fichier
 
-Unknown format of version file
-Format inconnu du fichier de version
+URL not found, or unknown format of version file
+URL non trouvée, ou format inconnu de fichier de version
+
+A new version (%s) of PWGen is available!\nDo you want to visit the download page now?
+Une nouvelle version (%s) de PWGen est disponible!\nVoulez-vous visiter la page de téléchargement maintenant ?
 
 (NOTE: %s)
 (NOTE: %s)
-
-A new version (%s) of PWGen is available!\nDo you want to visit the download page now?\n(NOTE: %s)
-Une nouvelle version (%s) de PWGen est disponible!\nVoulez-vous visiter la page de téléchargement maintenant ?\n(NOTE: %s)
 
 Your version of PWGen is up-to-date.
 Votre version de PWGen est à jour.
 
 Error while checking for updates:\n%s.
-Erreur à la vérification de la mise à jour :\n%s.
+Erreur pendant la vérification de la mise à jour :\n%s.
 
 WARNING: Random generator is deterministic (press F7 to deactivate)!
 ATTENTION : le générateur de mots de passe est déterministe (appuyer sur F7 pour le désactiver) !
@@ -760,6 +790,9 @@ Afficher la licence
 Quick help
 Aide rapide
 
+Position Automatically
+Positionner automatiquement
+
 You can use the following placeholders:
 Vous pouvez utiliser les paramètres fictifs suivants :
 
@@ -776,19 +809,19 @@ punctuation marks
 caractères de ponctuation
 
 higher ANSI characters
-caractère ANSI supérieur
+caractères ANSI supérieurs
 
 generate phonetic password (only lower-case letters)
-Générer un mot de passe phonétique (prononcable) (lettres minuscules seulement)
+Générer un mot de passe phonétique (prononçable) (lettres minuscules seulement)
 
 generate phonetic password (mixed-case letters)
-Générer un mot de passe phonétique (prononcable) (lettres majuscules et minuscules)
+Générer un mot de passe phonétique (prononçable) (lettres majuscules et minuscules)
 
 Comments may be provided in square brackets \"[...]\"\nat the beginning of the sequence.
-Les commentaires peuvent être mis entre crochets \"[...]\"\n en début de séquence.
+Les commentaires peuvent être mis entre crochets \"[...]\" en début de séquence.
 
 Format specifiers have the form \"%[*][N]x\" or \"%[*][M-N]x\", where the\noptional argument \"N\" specifies the number of repetitions (between 1 and\n99999), \"M-N\" specifies a random number of repetitions in the range\nfrom M to N, and \"x\" is the actual format specifier/placeholder. The\noptional asterisk (*) means that each character must occur only once in\nthe sequence. Example: \"%16u\" means \"Insert 16 random upper-case letters\ninto the password\".
-Les spécificateurs de format ont la forme \"%[*][N]x\" ou \"%[*][M-N]x\", où\nl'argument optionnel \"N\" spécifie le nombre de répétitions (entre 1 et 9999),\n\"M-N\" spécifie un nombre aléatoire de répétitions dans l'intervalle de M à N, et \"x\" est le\nspécificateur de format actuel/paramètre fictif (placeholder).\nL'astérisque (*) veut dire que chaque caractère ne doit apparaitre qu'une seule fois dans la séquence.\nExemple: \"%16u\" veut dire \"Insérer 16 lettres minuscules aléatoires dans le mot de passe\".
+Les spécificateurs de format ont la forme \"%[*][N]x\" ou \"%[*][M-N]x\", où\nl'argument optionnel \"N\" spécifie le nombre de répétitions (entre 1 et 9999),\n\"M-N\" spécifie un nombre aléatoire de répétitions dans l'intervalle de M à N, et \"x\" est le\nspécificateur de format actuel/paramètre fictif (placeholder).\nL'astérisque (*), optionnelle, veut dire que chaque caractère ne doit apparaitre \nqu'une seule fois dans la séquence.\nExemple: \"%16u\" veut dire \"Insérer 16 lettres minuscules aléatoires dans le mot de passe\".
 
 List of placeholders with optional argument \"N\":
 Liste des emplacements réservés avec un argument optionnel : \"N\"
@@ -815,7 +848,7 @@ consonants, upper-case
 consonnes, majuscule
 
 List of special format specifiers\n(possible usage of argument \"N\" is indicated by \"{N}\"):
-Liste de déterminants de format spécial\n(usage possible de l'argument \"N\" indiqué par
+Liste de déterminants de format spécial\n(usage possible de l'argument \"N\" indiqué par \"{N}\"):
 
 insert password generated via \"Include characters/words\"
 Insérer le mot de passe généré par \"inclure caractères/mots\"
@@ -901,14 +934,11 @@ La clé a été effacée.
 New key generated.
 Nouvelle clé générée.
 
-Provide Additional Entropy
-Fournir de l'entropie additionnelle
-
 Enter or paste some text into the box below, press mouse buttons, or move your mouse within the window.
 Entrez ou collez du texte dans la boîte de dialogue ci-dessous, appuyez sur les boutons de la souris, ou bougez votre souris dans la fenêtre.
 
 %d bits of entropy have been added to the random pool.
-%d bits d'entropie ont étaient ajoutés au générateur aléatoire
+%d bits d'entropie ont étaient ajoutés a la réserve aléatoire
 
 Error while formatting string
 Erreur au formatage de la chaîne

@@ -1,7 +1,7 @@
 ﻿[LANGUAGENAME]
 Deutsch
 [LANGUAGEVERSION]
-2.8.0
+2.9.0
 [LANGUAGEAUTHOR]
 Christian Thöing	// your name could stand here! :-)
 [LANGUAGEHELPFILE]
@@ -67,6 +67,9 @@ Datei mit Wortliste:
 
 Browse
 Durchsuchen
+
+Specify length*:
+Länge vorgeben*:
 
 Combine Words with Characters
 Wörter mit Zeichen kombinieren
@@ -337,17 +340,26 @@ Konnte Hotkey %s nicht registrieren.\nBitte probieren Sie eine andere Tastenkomb
 The selected file already exists. Do you\nwant to append passwords to this file\n(existing passwords will be preserved),\nor do you want to completely overwrite it?\n\nYes\t-> append passwords,\nNo\t-> overwrite file,\nCancel\t-> cancel process.
 Die ausgewählte Datei existiert bereits.\nMöchten Sie Passwörter zur Datei hinzufügen\n(existierende Passwörter bleiben erhalten),\noder möchten Sie die Datei komplett überschreiben?\n\nJa\t-> Passwörter hinzufügen,\nNein\t-> Datei überschreiben,\nAbbr.\t-> Vorgang abbrechen.
 
+Passphrase: Invalid length range.
+Passphrase: Ungültiger Längenbereich.
+
 If the option \"Each character must occur\nonly once\" is activated, the password length\nis limited to the size of the character set (%d).
 Wenn die Option "Jedes Zeichen darf nur einmal\nvorkommen" aktiviert ist, ist die Passwortlänge\nauf die Größe des Zeichensatzes beschränkt (%d).
 
 If the option \"Each word must occur only\nonce\" is activated, the number of words\nis limited to the size of the word list (%d).
 Wenn die Option "Jedes Wort darf nur einmal\nvorkommen" aktiviert ist, ist die Anzahl der\nWörter auf die Größe der Wortliste beschränkt (%d).
 
-Creating password list ...
-Erstelle Passwort-Liste ...
+Generating password list ...
+Generiere Passwort-Liste ...
 
 %d of %d passwords generated.
 %d von %d Passwörtern generiert.
+
+Generating passphrase ...
+Generiere Passphrase ...
+
+%d of %d passphrases generated.
+%d von %d Passphrasen generiert.
 
 Format string produces empty password
 Formatierungsbefehl liefert leeres Passwort

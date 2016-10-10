@@ -3,6 +3,33 @@
                 Copyright (c) 2002-2016 by Christian Thöing
 
 
+Version 2.9.0 (2016-09-09)
+
+NEW FEATURES:
+
+- New option "Specify length" for the "Include words" setting, which allows
+  selecting passphrases with a certain length or length range; if enabled,
+  only passphrases with lengths in the specified range will be displayed or
+  added to the password list
+- Check on start-up if an instance of PWGen is already running; if so, the user
+  is asked to close the instance before starting a new one
+- New option "Change font" in the context menu of the "Quick help" window
+
+CHANGES & IMPROVEMENTS:
+
+- Changed hot keys for profiles (via main menu: File > Profile) from
+  <Ctrl>+<Alt>+... to <Alt>+<Shift>+... in order to avoid ambiguities with the
+  <AltGr> key in Windows, which is frequently used to access special characters
+  on non-English keyboard layouts (<Ctrl>+<Alt> = <AltGr>)
+
+FIXES:
+
+- Password option "Include at least one lower-case letter" did not work for
+  phonetic passwords with mixed-case letters ("<phoneticx>" character set)
+  (setting was ignored)
+
+----------
+
 Version 2.8.0 (2016-04-19)
 
 NEW FEATURES:

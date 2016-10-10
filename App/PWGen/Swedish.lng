@@ -1,9 +1,12 @@
 ﻿[LANGUAGENAME]
 Svenska
+
 [LANGUAGEVERSION]
-2.8.0
+2.9.0
+
 [LANGUAGEAUTHOR]
 Åke Engelbrektson\nwww.svenskasprakfiler.se
+
 [LANGUAGEHELPFILE]
 manual.pdf
 
@@ -45,6 +48,9 @@ Ordlista:
 
 Browse
 Bläddra
+
+Specify length*:
+Specificera längd*:
 
 Combine Words with Characters
 Kombinera ord och tecken
@@ -124,8 +130,8 @@ Reset
 Deactivate
 Inaktivera
 
-Provide Additional Entropy...
-Skapa ytterligare entropi...
+Provide Additional Entropy
+Tillhandahåll ytterligare entropi
 
 As Text...
 Som text...
@@ -315,17 +321,26 @@ Kunde inte registrera snabbtangenten %s.\nFörsök med annan tangentkombination.
 The selected file already exists. Do you\nwant to append passwords to this file\n(existing passwords will be preserved),\nor do you want to completely overwrite it?\n\nYes\t-> append passwords,\nNo\t-> overwrite file,\nCancel\t-> cancel process.
 Det valda filnamnet finns redan.\nVill du lägga till lösenord i denna fil (befintliga lösenord bevaras)\neller vill du skriva över den helt?\n\nJa\t-> Lägg till lösenord.\nNej\t-> Skriv över filen.\nAvbryt\t-> Avbryt åtgärden.
 
-When the option \"Each character must occur\nonly once\" is activated, the password length\nis limited to the size of the character set (%d).
-När alternativet \"Varje tecken får endast\nförekomma en gång\" är aktiverat, är lösenordslängden\nbegränsad till storleken på teckenuppsättningen (%d).
+Passphrase: Invalid length range.
+Lösenordsfras: Ogiltigt längdintervall.
 
-When the option \"Each word must occur only\nonce\" is activated, the number of words\nis limited to the size of the word list (%d).
-När alternativet \"Varje ord får endast\nförekomma en gång\" är aktiverat, är antalet ord\nbegränsat till storleken på ordlistan (%d).
+If the option \"Each character must occur\nonly once\" is activated, the password length\nis limited to the size of the character set (%d).
+Om alternativet \"Varje tecken får endast\nförekomma en gång\" är aktiverat, begränsas\nlängden på lösenordet av storleken på teckenuppsättningen (%d).
 
-Creating password list ...
-Skapar lösenordslista...
+If the option \"Each word must occur only\nonce\" is activated, the number of words\nis limited to the size of the word list (%d).
+Om alternativet \"Varje ord får endast förekomma\nen gång\" är aktiverat, begränsas\nantalet ord av storleken på ordlistan (%d).
+
+Generating password list ...
+Genererar lösenordslista ...
 
 %d of %d passwords generated.
 %d av %d lösenord genererade.
+
+Generating passphrase ...
+Genererar lösenordsfras ...
+
+%d of %d passphrases generated.
+%d av %d lösenordsfraser genererade.
 
 Format string produces empty password
 Formateringssträngen producerar tomma lösenord
@@ -444,14 +459,14 @@ Använd högupplösnings-timer:\n%s\n\nAktuellt värde: %s.
 Could not download version file
 Kunde inte ladda ner versionsfil
 
-Unknown format of version file
-Okänt format på versionsfilen
+URL not found, or unknown format of version file
+Adressen kunde inte hittas, eller okänt format på versionsfilen
+
+A new version (%s) of PWGen is available!\nDo you want to visit the download page now?
+Version (%s) av PWGen finns nu tillgänglig!\nVill du besöka nedladdningssidan nu?
 
 (NOTE: %s)
 (NOTERA: %s)
-
-A new version (%s) of PWGen is available!\nDo you want to visit the download page now?\n(NOTE: %s)
-Version (%s) av PWGen finns tillgänglig!\nVill du besöka nedladdningssidan nu?\n(NOTERA: %s)
 
 Your version of PWGen is up-to-date.
 Din version av PWGen är uppdaterad.
